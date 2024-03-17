@@ -30,6 +30,21 @@
             margin-right: 12.5px; /* Increased spacing between icons */
             cursor: pointer; /* Change cursor to pointer on hover */
         }
+
+        /* Style for the disclaimer */
+        footer {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            font-size: 12px;
+            color: #fff;
+            background-color: #58c322; /* green color */
+            padding: 5px;
+            box-sizing: border-box;
+            border-top: 1px solid #ddd;
+        }
     </style>
 </head>
 <body onclick="startaudio()">
@@ -50,7 +65,7 @@
                 <img src="https://imgur.com/7j4DAcZ.png" alt="Steam" title="Official Steam group - bloodhound.cc" onclick="redirectToSteam()">
                 <img src="https://imgur.com/HuZvn0A.png" alt="Discord" title="Official Discord server - bloodhound.cc" onclick="redirectToDiscord()">
                 <img src="https://imgur.com/dD1xAD9.png" alt="Youtube" title="Official Youtube - bloodhound.cc" onclick="redirectToYoutube()">
-                <img src="https://imgur.com/STNBSQK.png" alt="Download" title="Official Download - bloodhound.cc" onclick="downloadVersion()">
+                <img src="https://imgur.com/fSytQ6l.png" alt="Download" title="Official Download - bloodhound.cc" onclick="downloadVersion()">
             </div>
         </div>
     </div>
@@ -76,5 +91,10 @@
             window.location.href = "/download"; // Change to the appropriate download URL
         }
     </script>
+
+    <!-- Disclaimer -->
+    <footer>
+        <p>This is not affiliated with whoever owns bloodhound.cc.</p>
+    </footer>
 </body>
 </html>
