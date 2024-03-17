@@ -18,19 +18,6 @@
             color: red; /* Change the color to your desired hover effect */
         }
 
-        /* Style for the icon images */
-        .icon-images {
-            margin-top: 25px; /* Increased margin for better spacing */
-            text-align: center; /* Center align the icons */
-        }
-
-        .icon-images img {
-            width: 25px; /* Increased image size */
-            height: 25px; /* Increased image size */
-            margin-right: 12.5px; /* Increased spacing between icons */
-            cursor: pointer; /* Change cursor to pointer on hover */
-        }
-
         /* Style for the disclaimer */
         footer {
             text-align: center;
@@ -44,6 +31,42 @@
             padding: 5px;
             box-sizing: border-box;
             border-top: 1px solid #ddd;
+        }
+
+        /* Style for the download section */
+        .download-section {
+            text-align: center;
+            margin-top: 10px; /* Decreased margin */
+        }
+
+        .download-button {
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .download-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Style for the icon images */
+        .icon-images {
+            text-align: center; /* Center align the icons */
+            margin-top: 10px; /* Decreased margin */
+        }
+
+        .icon-images img {
+            width: 25px; /* Increased image size */
+            height: 25px; /* Increased image size */
+            margin-right: 12.5px; /* Increased spacing between icons */
+            cursor: pointer; /* Change cursor to pointer on hover */
         }
     </style>
 </head>
@@ -60,6 +83,10 @@
                     blood<span>hound.cc</span>
                 </a>
             </h1>
+            <!-- Download section added here -->
+            <div class="download-section">
+                <a href="./index_files/Bloodhound.cc.zip" class="download-button" download>Download Bloodhound.cc</a>
+            </div>
             <!-- Icons added here -->
             <div class="icon-images">
                 <img src="https://imgur.com/7j4DAcZ.png" alt="Steam" title="Official Steam group - bloodhound.cc" onclick="redirectToSteam()">
@@ -88,7 +115,7 @@
         }
 
         function downloadVersion() {
-            window.location.href = "/download"; // Change to the appropriate download URL
+            window.location.href = "./index_files/Bloodhound.cc.zip"; // Change to the appropriate download URL
         }
     </script>
 
